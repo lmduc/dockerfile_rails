@@ -18,6 +18,12 @@ ENV MINI_MAGICK_VERSION 3.7.0
 ENV REDIS_OBJECTS_VERSION 1.2.1
 ENV THERUBYRACER_VERSION 0.12.2
 ENV FOG_VERSION 1.38.0
+ENV POSTGRES_EXT_VERSION 2.4.1
+ENV ROLLBAR_VERSION 2.8.3
+ENV HTTPARTY_VERSION 0.13.7
+ENV SIDEKIQ_VERSION 4.1.2
+ENV AWS_SDK_VERSION 1.52.0
+ENV RACK_CORS_VERSION 0.4.0
 
 RUN gem install rails --version "$RAILS_VERSION"
 RUN gem install pg --version "$PG_VERSION"
@@ -27,3 +33,9 @@ RUN gem install mini_magick --version "$MINI_MAGICK_VERSION"
 RUN gem install redis-objects --version "$REDIS_OBJECTS_VERSION"
 RUN gem install therubyracer --version "$THERUBYRACER_VERSION"
 RUN gem install fog --version "$FOG_VERSION"
+RUN gem install postgres_ext --version "$POSTGRES_EXT_VERSION"
+RUN gem install rollbar --version "$ROLLBAR_VERSION"
+RUN gem install httparty --version "$HTTPARTY_VERSION"
+RUN gem install sidekiq --version "$SIDEKIQ_VERSION"
+RUN gem install aws-sdk --version "$AWS_SDK_VERSION"
+RUN gem install rack-cors --version "$RACK_CORS_VERSION"
